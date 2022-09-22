@@ -3,10 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NEWSROOM - Free Bootstrap Magazine Template</title>
+    <title>NewsJantha -Homepage</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Jantha News favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -49,16 +56,19 @@
                 </h5>
                 <script src="js/datatime.js"></script>
             </div>
-        </div>
+        </div>  
         <div class="row align-items-center py-2 px-lg-5">
             <div class="col-lg-4">
                 <a href="" class="navbar-brand d-none d-lg-block">
-                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Jantha</h1>
                 </a>
             </div>
-            <div class="col-lg-8 text-center text-lg-right">
-                <iframe src="https://giphy.com/embed/d7SnWNs1hyW2hNrFRn" width="480" height="199" frameBorder="0"
-                    allowFullScreen></iframe>
+            <div class="col-md text-lg-center">
+                <h1 class="blink_me">LIVE</h1>
+            </div>
+                
+            
+            <div class="col text-lg-right">
                 <link rel="stylesheet" href="css/darkmode.css">
                 <img src="img/darkicon.png" onclick="myFunction()" id="dark"/>
                 <script src="js/darkmode.js"></script>
@@ -72,7 +82,7 @@
     <div class="container-fluid p-0 mb-3">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
             <a href="" class="navbar-brand d-block d-lg-none">
-                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Jantha</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -103,20 +113,19 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Breadcrumb Start -->
-    <div class="container-fluid">
-        <div class="container">
-            <nav class="breadcrumb bg-transparent m-0 p-0">
-                <a class="breadcrumb-item" href="#">Home</a>
-                <a class="breadcrumb-item" href="#">Category</a>
-                <span class="breadcrumb-item active">Technology</span>
-            </nav>
+    <div class="row">
+        <div class="col justify-content-end">
+            <!-- google translator -->
+            <div id="google_element"></div>
+            <script src="https://translate.google.com/translate_a/element.js?cb=adGoogleTranslate"></script>
+            <script>
+                function loadGoogleTranslate() {
+                        new google.translate.TranslateElement("google_element");
+                    }
+            </script>
         </div>
     </div>
-    <!-- Breadcrumb End -->
-
-
+    
     <!-- News With Sidebar Start -->
     <div class="container-fluid py-3">
         <div class="container">
@@ -537,7 +546,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">News</span>Jantha</h1>
                 </a>
                 <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
                 <div class="d-flex justify-content-start mt-4">
@@ -604,10 +613,10 @@
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5">
         <p class="m-0 text-center">
-            &copy; <a class="font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved.
+            &copy; <a class="font-weight-bold" href="#">NewsJantha</a>. All Rights Reserved.
 
             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            Designed by <a class="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            Designed by <a class="font-weight-bold" href="https://htmlcodex.com">Dword Core</a>
         </p>
     </div>
     <!-- Footer End -->

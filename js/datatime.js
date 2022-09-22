@@ -5,7 +5,6 @@ const timeclr = document.getElementById('time');
 // 👇️ Change text color on mouseover
 dateclr.addEventListener('mouseover', function handleMouseOver() {
     dateclr.style.color = 'red';
-    dateclr.style.background = 'black';
 });
 
 timeclr.addEventListener('mouseover', function handleMouseOver() {
