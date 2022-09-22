@@ -41,7 +41,7 @@
                         <!-- <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;"> -->
                         <div class="col d-flex justify-content-end">
 
-                            <marquee behavior="" direction="" scrollamount="3">
+                            <marquee behavior="" direction="" scrollamount="3" loop="infinite">
                                 <p class="text-light text-center my-1 d-flex justify-content-end">
 
                                     <?php
