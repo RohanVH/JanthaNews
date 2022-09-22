@@ -33,32 +33,48 @@
 
     <!-- Topbar Start -->
     <div class="content">
-
         <div class="container-fluid">
-            <div class="row align-items-center bg-light px-lg-5 bg-dark">
-                <div class="col-12 col-md-8 ">
+            <div class="row align-items-center bg-light bg-dark">
+                <div class="col-9">
                     <div class="d-flex justify-content-between">
-                        <div class="bg-primary text-white text-center p-3"><span class=""> News Headlines </span></div>
-                        <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="bg-primary text-white text-center py-1 p-1"><span class="h3 text-light align-items-center">News Headlines</span></div>
+                        <!-- <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;"> -->
+                        <div class="col d-flex justify-content-end">
 
+                            <marquee behavior="" direction="" scrollamount="3">
+                                <p class="text-light text-center my-1 d-flex justify-content-end">
+
+                                    <?php
+                                    include('scraping.php');
+                                    foreach ($html->find('li.clearfix') as $ele) {
+                                        echo $ele->plaintext . '&nbsp;&nbsp;';
+                                        foreach ($html->find('li.clearfix') as $ele) {
+                                            echo $ele->plaintext . '&nbsp;&nbsp;';
+                                            foreach ($html->find('li.clearfix') as $ele) {
+                                                echo $ele->plaintext . '&nbsp;&nbsp;';
+                                            }
+                                        }
+                                    }
+                                    ?>
+                                </p>
+                            </marquee>
                         </div>
+                        <!-- </div> -->
                     </div>
                 </div>
-                <div class="col-md-4 text-right d-none d-md-block">
-                    <div class="container">
-
+                <div class="col text-end d-flex justify-content-end">
+                    <div class="d-flex justify-content-end">
                         <h5 style="cursor:pointer;color:white;">
                             <span id="date"></span>
                             &nbsp;
-                            &nbsp;
-                            &nbsp;
+
                             <span id="time"></span>
                         </h5>
                         <script src="js/datatime.js"></script>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center py-2 px-lg-5">
+            <div class="row align-items-center py-2 px-lg-5 bg-light">
                 <div class="col-lg-4">
                     <a href="" class="navbar-brand d-none d-lg-block">
                         <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Jantha</h1>
