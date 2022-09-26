@@ -10,7 +10,7 @@
         $insertion="INSERT into category values('$add')";
         $inserted=mysqli_query($connectdb,$insertion);  
         $sql=mysqli_query($connectdb,$query);
-        if($inserted && $sql){
+        if($inserted){
             echo "<script>alert('$add added to categories.');document.location ='adminHome.php';</script>";
         }
         else{

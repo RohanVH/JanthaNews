@@ -6,10 +6,12 @@
 
         <form action="add_cat_db.php" method="post">
 
-            <button class="btn btn-outline-danger dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Category</button>
-            <ul class="dropdown-menu">
-                <?php include('fetch_categories.php'); ?> 
-            </ul>
+            <select class="btn btn-outline-danger dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Select Category">
+                <ul class="dropdown-menu">
+                    <option value="" selected disabled hidden>Categories</option>
+                    <?php include('fetch_categories.php'); ?>
+                </ul>
+            </select>
             <br>
             <br>
             <div class="d-flex justify-content-center border border-3 border-danger text-light" style="background-color:white;border-style: ridge;border-width: thick;">

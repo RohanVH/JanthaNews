@@ -1,12 +1,12 @@
 <div class="container justify-content-center">
-<h1 class="text-center"> <u>Add/Delete Categories</u></h1><br>
-    <form action="add_cat_db.php" method="post">
-    
-    <div class="d-flex justify-content-center border border-3 border-danger text-light"
-            style="background-color:black;border-style: ridge;border-width: thick;">
-            <br>
-            <br>
-            <div class=" row g-3 align-items-center d-flex justify-content-center"> 
+    <h1 class="text-center"> <u>Add/Delete Categories</u></h1><br>
+
+
+    <div class="d-flex justify-content-center border border-3 border-danger text-light" style="background-color:black;border-style: ridge;border-width: thick;">
+        <br>
+        <br>
+        <form action="add_cat_db.php" method="post">
+            <div class=" row g-3 align-items-center d-flex justify-content-center">
                 <div class="col-auto">
                     <label for="addcat" class="col-form-label"><u>Create New Category</u></label>
                 </div>
@@ -19,18 +19,21 @@
             </div>
         </form>
 
-            <hr style="width: 1px; height: 250px; display: inline-block;">
-        <form action="delete_cat_db.php" method="post"></form>
-            <div class=" row g-3 align-items-center d-flex justify-content-center"> 
+        <hr style="width: 1px; height: 200px; display: inline-block;">
+        <div>
+
+            <form action="delete_cat_db.php" method="post">
+            <div class=" row g-3 align-items-center d-flex justify-content-center">
                 <div class="col-auto">
                     <label for="addcat" class="col-form-label"><u>Delete Category</u></label>
                 </div>
                 <div class="col-auto">
-                    <button class="btn btn-outline-danger dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Select Category</button>
-                    <ul class="dropdown-menu">
-                        <?php include('fetch_categories.php');?>
-                    </ul>
+                    <select class="btn btn-outline-danger dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" name="select">
+                        <ul class="dropdown-menu">
+                            <option value="" selected disabled hidden>Categories</option>
+                            <?php include('fetch_categories.php'); ?>
+                        </ul>
+                    </select>
                 </div>
                 <br>
                 <div class="">
@@ -38,11 +41,12 @@
                     <br>
                 </div>
                 <br>
+                </form>
             </div>
-              
+
         </div>
 
-    </form>
-    <br>
-    <br>
+        <br>
+        <br>
+    </div>
 </div>
