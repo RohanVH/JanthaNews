@@ -1,27 +1,29 @@
-<!DOCTYPE html>
-<html>
+<?php
+/* [INIT] */
+require "config.php";
 
-<head>
-    <meta charset=" utf - 8 " />
-    <title> Blob File MySQL </title>
-</head>
+/* [ERROR CHECKING] */
+if ($_FILES['upFile']['size']==0) { die("No file selected"); }
+if (exif_imagetype($_FILES['upFile']['tmp_name'])===false) { die("Not an image"); }
 
-<body>
-    <?php
-    include('db_config.php');
-    if (isset($_POST['btn'])) {
-        $name = $_FILES['myfile']['name'];
-        $type = $_FILES['myfile']['type'];
-        $data = file_get_contents($_FILES['myfile']['tmp_name']);
-        $s="insert into myblob values('','$name','$type',$data)";
-        $stmt=mysqli_query($connectdb,$s);
-    }
-    ?>
-    <form method="post" enctype="multipart/form-data">
+/* [CONNECT TO DB] */
+$pdo = new PDO(
+  "mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=".DB_CHARSET, 
+  DB_USER, DB_PASSWORD, 
+	[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+  PDO::ATTR_EMULATE_PREPARES => false]
+);
 
-        <input type="file" name="myfile" />
-        <button name="btn"> Upload </button>
-    </form>
-</body>
+/* [INSERT IMAGE] */
+// DO MORE ERROR CHECKING & HANDLING HERE IF YOU WANT
+try {
+	$stmt = $pdo->prepare("INSERT INTO `upload` (`name`, `data`) VALUES (?, ?)");
+	$stmt->execute([$_FILES["upFile"]["name"], file_get_contents($_FILES['upFile']['tmp_name'])]);
+} catch (Exception $ex) {
+	echo "ERROR - " . $ex->getMessage();
+	die();
+}
 
-</html>
+/* [ON COMPLETE] */
+echo "success";
