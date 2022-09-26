@@ -41,17 +41,17 @@
                         <!-- <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;"> -->
                         <div class="col d-flex justify-content-end">
 
-                            <marquee behavior="" direction="" scrollamount="3" loop="infinite">
+                            <marquee behavior="" direction="" scrollamount="1" loop="infinite">
                                 <p class="text-light text-center my-1 d-flex justify-content-end">
 
                                     <?php
                                     include('scraping.php');
                                     foreach ($html->find('li.clearfix') as $ele) {
-                                        echo $ele->plaintext . '&nbsp;&nbsp;';
+                                        echo $ele->plaintext . ' ';
                                         foreach ($html->find('li.clearfix') as $ele) {
-                                            echo $ele->plaintext . '&nbsp;&nbsp;';
+                                            echo $ele->plaintext . ' ';
                                             foreach ($html->find('li.clearfix') as $ele) {
-                                                echo $ele->plaintext . '&nbsp;&nbsp;';
+                                                echo $ele->plaintext . ' ';
                                             }
                                         }
                                     }
@@ -112,9 +112,7 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Categories</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="#" class="dropdown-item">Sports</a>
-                                <a href="#" class="dropdown-item">Menu item 2</a>
-                                <a href="#" class="dropdown-item">Menu item 3</a>
+                                <?php include('fetch_categories.php'); ?>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link text-light">Contact</a>
