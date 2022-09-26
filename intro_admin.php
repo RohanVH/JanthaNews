@@ -12,13 +12,13 @@
 <body class="container d-flex justify-content-center" style="background-color: black;">
 
     <div class="container d-flex justify-content-center">
-        <img src="logo/N.gif" alt="NewsJantha Intro" style="background-repeat:no-repeat;width:50%">
+        <img src="logo/admin.gif" alt="NewsJantha Intro" style="background-repeat:no-repeat;width:50%">
     </div>
     <script>
         setTimeout(myURL, 2000);
 
         function myURL() {
-            window.open("homepage.php", "_self");
+            window.open("adminHome.php", "_self");
         }
     </script>
 </body>

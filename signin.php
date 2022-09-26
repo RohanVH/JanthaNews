@@ -10,10 +10,9 @@ if (isset($_POST['submit'])) {
         if ($emails == $row['email'] && $password == $row['password']) {
             session_start();
             $_SESSION['emails'] = $emails;
-
-            header("Location: index.php");
+            header("Location: intro_admin.php");
         } else {
-            echo '<script>alert("Invalid Email ID and Password"); document.location = "index.php";</script>';
+            echo '<script>alert("Invalid Email ID and Password"); document.location = "adminLogin.php";</script>';
         }
     }
 }
