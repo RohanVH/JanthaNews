@@ -51,7 +51,7 @@ if (isset($_POST['submit']) && isset($_FILES['upFile'])) {
 
 		if (in_array($video_ex_lc, $allowed_exs)) {
 
-			$new_video_name = uniqid("video-", true) . '.' . $video_ex_lc;
+			$new_video_name = uniqid("IMG-", true) . '.' . $video_ex_lc;
 			$video_upload_path = 'uploads/' . $new_video_name;
 			move_uploaded_file($tmp_name, $video_upload_path);
 
