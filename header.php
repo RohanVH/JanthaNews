@@ -7,6 +7,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+    <link rel="stylesheet" href="path/to/pyscript.css" />
+    <script defer src="path/to/pyscript.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -41,18 +43,15 @@
                         <!-- <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;"> -->
                         <div class="col d-flex justify-content-end">
 
-                            <marquee behavior="" direction="" scrollamount="1" loop="infinite">
+                            <marquee behavior="" direction="" scrollamount="2" loop="infinite">
                                 <p class="text-light text-center my-1 d-flex justify-content-end">
 
                                     <?php
                                     include('scraping.php');
-                                    foreach ($html->find('li.clearfix') as $ele) {
-                                        echo $ele->plaintext . ' ';
-                                        foreach ($html->find('li.clearfix') as $ele) {
+                                    if (true) {
+
+                                        foreach ($html->find('div.detail') as $ele) {
                                             echo $ele->plaintext . ' ';
-                                            foreach ($html->find('li.clearfix') as $ele) {
-                                                echo $ele->plaintext . ' ';
-                                            }
                                         }
                                     }
                                     ?>
@@ -127,4 +126,5 @@
                 </div>
             </nav>
         </div>
+<br>
         <!-- Navbar End -->
