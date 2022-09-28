@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 mb-5">
             <a href="index.html" class="navbar-brand">
-                <img src="logo/N.gif" alt="NewsJantha Intro" style="background-repeat:no-repeat;width:100%">
+                <img src="logo/N.gif" alt="JanthaNews Intro" style="background-repeat:no-repeat;width:100%">
             </a>
             <div class="d-flex justify-content-start mt-4">
                 <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -65,7 +65,7 @@
 </div>
 <div class="container-fluid py-4 px-sm-3 px-md-5">
     <p class="m-0 text-center">
-        &copy; <a class="font-weight-bold" href="#">NewsJantha</a>. All Rights Reserved.
+        &copy; <a class="font-weight-bold" href="#">JanthaNews</a>. All Rights Reserved.
 
         Designed by <a class="font-weight-bold" href="https://www.thecompanycheck.com/company/dword-core-private-limited/U72900KA2021PTC153188">Dword Core</a>
     </p>
@@ -74,7 +74,7 @@
 
 
 <!-- Back to Top -->
-<a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+<!-- <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a> -->
 
 
 <!-- JavaScript Libraries -->

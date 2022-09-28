@@ -28,14 +28,14 @@
 
                         while ($imglist = mysqli_fetch_assoc($run)) {
 
-                            $body = '<figure class="container-fluid d-flex justify-content-center"><img src="uploads/' . $imglist['file_url'] . '" class="img-fluid d-flex justify-content-center">
+                            $body = '<div class="container d-flex justify-content-center bg-dark"><br><br><figure ><br><img src="uploads/' . $imglist['file_url'] . '" class="img-fluid d-flex justify-content-center">
                             <figcaption>
                                 <blockquote class="text-center text-light">' . $imglist['subject'] . '</blockquote>
                                 <blockquote class="text-center text-light">' . $imglist['content'] . '
                                     <hr>
                                 </blockquote>
-                            </figcaption>   
-                        </figure>';
+                            </figcaption>  <br>
+                        </figure><br><br></div>';
                             fwrite($myfile, $body);
                         }
                     }

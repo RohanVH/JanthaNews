@@ -33,11 +33,11 @@
 </div>
 <hr>
 <div class="container">
-        <div style="width:400px; height:400px">
-                <div class="row container d-flex justify-content-betweeen">
-                        <div class="col-auto border border-3 text-center">
+        <div class="row " style="width:400px; height:400px">
+                <div class="container-fulid d-flex justify-content-between" style="width:900px; height:400px">
+                        <div class="col-auto border border-3 text-center bg-dark">
                                 <span style="position:relative;" class="h3 text-danger text-center"><u class="blink_me">Flash News</u></span>
-                                <p class="text-dark text-center">
+                                <p class="text-light text-center">
                                         <br>
                                         <marquee behavior="scroll" direction="up" scrollamount="3" style="width:300px; height:300px">
                                                 <?php
@@ -47,27 +47,45 @@
                                         </marquee>
                                 </p>
                         </div>
-                </div>
 
+                        <div id="carouselExampleInterval" class="col-auto carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
 
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                        <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="...">
+                                        <?php include("imageslide.php") ?>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                </button>
                         </div>
-                        
+                        <div class="col-auto border border-3 text-center bg-dark">
+                                <span style="position:relative;" class="h3 text-danger text-center"><u class="blink_me">Flash News</u></span>
+                                <p class="text-light text-center">
+                                        <br>
+                                        <marquee behavior="scroll" direction="up" scrollamount="3" style="width:300px; height:300px">
+                                                <?php
+                                                if (true) {
+
+                                                        foreach ($html->find('div.detail') as $ele) {
+                                                                echo '<b class="h5 text-light">'.$ele->plaintext . '</b><br><br>';
+                                                        }
+                                                }
+                                                ?>
+                                                <br>
+                                        </marquee>
+                                </p>
+                        </div>
+
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                </button>
         </div>
 </div>
-</div>
+<br>
+
+
 
 <?php include('footer.php'); ?>

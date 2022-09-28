@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NewsJantha</title>
+    <title>JanthaNews</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -76,7 +76,7 @@
             <div class="row align-items-center py-2 px-lg-5 bg-light">
                 <div class="col-lg-4">
                     <a href="" class="navbar-brand d-none d-lg-block">
-                        <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Jantha</h1>
+                        <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Jantha</span>News</h1>
                     </a>
                 </div>
                 <div class="col-md text-lg-center">
@@ -98,7 +98,7 @@
         <div class="container-fluid p-0 mb-3 ">
             <nav class="navbar navbar-expand-lg bg-dark navbar-light py-2 py-lg-0 px-lg-5">
                 <a href="homepage.php" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Jantha</h1>
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Jantha</span>News</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
