@@ -11,11 +11,17 @@
             $myfile = fopen("$list.php", "w") or die("Unable to open file!");
             $headerInclude = "<?php include('header.php');?>\n";
             $heading = "<center class='h1'><u class='text-danger'>".$list."</u></center>\n";
+            $body="";
             $footerInclude = "<?php include('footer.php');?>\n";
             fwrite($myfile,$headerInclude);
             fwrite($myfile,$heading);
+            // fwrite($myfile,$heading);
+
             fwrite($myfile,$footerInclude);
             ?>
+
+
+
             <li class="nav-item text-center">
             <?php   
             echo '<a class="nav-link btn btn-outline-danger" href='.$list.'.php>';

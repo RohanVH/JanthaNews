@@ -5,6 +5,7 @@ if(isset($_POST['delete'])){
     $fetch_query = "DELETE from category where categories='$cat'";
     // $query= "DROP TABLE $cat";
     $sql = mysqli_query($connectdb, $fetch_query);
+    unlink("$cat.php"); 
     // $sql_table = mysqli_query($connectdb, $query);
     if ($sql) {
         echo "<script>alert('$cat Deleted.');document.location ='adminHome.php';</script>";
