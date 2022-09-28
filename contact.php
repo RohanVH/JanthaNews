@@ -34,7 +34,7 @@
                             <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
                             <div class="d-flex flex-column">
                                 <h6 class="font-weight-bold">Email Us</h6>
-                                <p class="m-0">janathanews@gmail.com</p>
+                                <p class="m-0">janathanews1@gmail.com</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
