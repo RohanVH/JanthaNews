@@ -18,12 +18,8 @@
         font-size: 1.5rem;
     }
 </style>
-<h1 class="text-center text-light"><u class="text-danger"><span class="text-danger">G</span><span class="text-light">allery </span></u></h1>
 
-<br>
-<br>
-<br>
-<br>
+
 <div class="alb">
     <?php
     // include("db_config.php");
@@ -47,18 +43,22 @@
 
     if (mysqli_num_rows($res) > 0) {
         while ($video = mysqli_fetch_assoc($res)) {
-    ?> <div class="container d-flex justify-content-center rounded float-left ">
+
+    ?>
+            <div class="column">
+
                 <figure>
-                    <img src="uploads/<?= $video['file_url'] ?>" class="img-fluid d-flex justify-content-center">
+                    <img src="uploads/<?= $video['file_url'] ?>" class="img-fluid img-thumbnail">
                     <figcaption>
                         <blockquote class="text-center text-light"><?= $video['subject'] ?></blockquote>
-                        <blockquote class="text-center text-light"><?= $video['content'] ?><hr></blockquote>
+                        <blockquote class="text-center text-light"><?= $video['content'] ?>
+                            <hr>
+                        </blockquote>
                     </figcaption>
                 </figure>
                 <!-- <video src="uploads/<?= $video['video_url'] ?>" controls>
                 </video> -->
             </div>
-            
 
     <?php
         }

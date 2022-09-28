@@ -40,10 +40,11 @@
                         }
                     }
                     else{
-                            $body= '<br><br><br><p class="h1 text-center text-danger"><blockquote class="bg-warning">
-                            No Categories</blockquote>
+                            $body= '<br><br><br><p class="h1 text-center text-dark"><q class="bg-warning"><span class="blink_me">
+                            No Images</span></q>
                             </p>';
                             fwrite($myfile, $body);
+                            fwrite($myfile, $footerInclude);
                        }
         
                        

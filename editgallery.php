@@ -40,9 +40,10 @@
 
             if (mysqli_num_rows($res) > 0) {
                 while ($video = mysqli_fetch_assoc($res)) {
-            ?> <div class="container d-flex justify-content-center rounded float-left ">
+            ?> <div class="column">
+
                         <figure>
-                            <img src="uploads/<?= $video['file_url'] ?>" class="img-fluid d-flex justify-content-center">
+                            <img src="uploads/<?= $video['file_url'] ?>" class="img-fluid img-thumbnail">
                             <figcaption>
                                 <blockquote class="text-center text-light"><?= $video['subject'] ?></blockquote>
                                 <blockquote class="text-center text-light"><?= $video['content'] ?>
@@ -73,3 +74,25 @@
     <br>
 </div>
 <?php include('footer.php'); ?>
+<style>
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>

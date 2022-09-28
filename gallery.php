@@ -9,13 +9,39 @@
 </div>
 <!-- Breadcrumb End -->
 <br>
-<div class="container bg-dark">
-    <br>
-    <!-- Breadcrumb Start -->
-    <div class=" row g-3 align-items-center d-flex justify-content-center">
+<style>
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
 
-        <?php include("fdata.php"); ?>
-    </div>
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+<div class="container bg-dark">
+    
+    <h1 class="text-center text-light"><u class="text-danger"><span class="text-danger">G</span><span class="text-light">allery </span></u></h1>
     <br>
+    <div class="container bg-dark d-flex justify-content-center">
+        <hr style="color:white;">
+        <!-- Breadcrumb Start -->
+        <div class="row d-flex justify-content-center">
+            <?php include("fdata.php"); ?>
+        </div>
+        <br>
+    </div>
 </div>
 <?php include('footer.php'); ?>
