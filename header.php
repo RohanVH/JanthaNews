@@ -43,7 +43,7 @@
                         <!-- <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;"> -->
                         <div class="col d-flex justify-content-end">
 
-                            <marquee behavior="" direction="" scrollamount="2" loop="infinite">
+                            <marquee behavior="" direction="" scrollamount="1" loop="infinite">
                                 <p class="text-light text-center my-1 d-flex justify-content-end">
 
                                     <?php
@@ -97,7 +97,7 @@
         <!-- Navbar Start -->
         <div class="container-fluid p-0 mb-3 ">
             <nav class="navbar navbar-expand-lg bg-dark navbar-light py-2 py-lg-0 px-lg-5">
-                <a href="" class="navbar-brand d-block d-lg-none">
+                <a href="homepage.php" class="navbar-brand d-block d-lg-none">
                     <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Jantha</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -105,16 +105,16 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.html" class="nav-item nav-link text-light">Home</a>
-                        <a href="category.html" class="nav-item text-light nav-link active">News</a>
+                        <a href="homepage.php" class="nav-item nav-link text-light">Home</a>
+                        <a href="homepage.php" class="nav-item text-light nav-link active">News</a>
                         <a href="gallery.php" class="nav-item nav-link text-light">Gallery</a>
-                        <div class="nav-item dropdown">
+                        <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Categories</a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <?php include('fetch_categories.php'); ?>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link text-light">Contact</a>
+                            </div>  
+                        </div> -->
+                        <a href="contact.php" class="nav-item nav-link text-light">Contact</a>
                     </div>
                     <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
                         <input type="text" class="form-control" placeholder="Keyword">
@@ -126,5 +126,5 @@
                 </div>
             </nav>
         </div>
-<br>
+        <br>
         <!-- Navbar End -->

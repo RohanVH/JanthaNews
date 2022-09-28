@@ -62,7 +62,7 @@ if (isset($_POST['submit']) && isset($_FILES['upFile'])) {
 			$sql = "INSERT INTO datafile(`categories`,`subject`,`content`,`file_url`)
                    VALUES('$categories','$subject','$content','$new_video_name')";
 			mysqli_query($connectdb, $sql);
-			header("Location: gallery.php");
+			header("Location: editgallery.php");
 		} else {
 
 			header("Location: adminHome.php");

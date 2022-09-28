@@ -19,10 +19,7 @@
     }
 </style>
 <h1 class="text-center text-light"><u class="text-danger"><span class="text-danger">G</span><span class="text-light">allery </span></u></h1>
-<span style="background-color:black;"><a href="adminHome.php">
-        <h3 class="text-light text-left">Back</h3>
-    </a>
-</span>
+
 <br>
 <br>
 <br>
@@ -71,9 +68,4 @@
     ?>
     <br>
     <br>
-</div>
-<div style="background-color:black;">
-    <a href="adminHome.php">
-        <h3 class="text-light text-center">Click here to UPLOAD more content</h3>
-    </a>
 </div>
