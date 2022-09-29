@@ -1,18 +1,5 @@
 <?php include('header.php');?>
 <center class='h1'><u class='text-danger'>MOVIES</u></center>
-<div class="container d-flex justify-content-center bg-dark"><br><br><figure ><br><img src="uploads/video-63335110b12492.95412730.jpg" class="img-fluid d-flex justify-content-center">
-                            <figcaption>
-                                <blockquote class="text-center text-light">Marks</blockquote>
-                                <blockquote class="text-center text-light">Event
-Date:May 20th
-                                    <hr>
-                                </blockquote>
-                            </figcaption>  <br>
-                        </figure><br><br></div><div class="container d-flex justify-content-center bg-dark"><br><br><figure ><br><img src="uploads/IMG-63342025e2c242.94052823.jpg" class="img-fluid d-flex justify-content-center">
-                            <figcaption>
-                                <blockquote class="text-center text-light">grgrg</blockquote>
-                                <blockquote class="text-center text-light">grrgrg
-                                    <hr>
-                                </blockquote>
-                            </figcaption>  <br>
-                        </figure><br><br></div>
+<br><br><br><p class="h1 text-center text-dark"><q class="bg-warning"><span class="blink_me">
+                            No Images</span></q>
+                            </p><?php include('footer.php');?>

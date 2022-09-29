@@ -59,6 +59,11 @@
             <?php
                 }
             } else {
+                ?>
+                <div class="carousel-item active justify" data-bs-interval="2000">
+                    <img src="logo/noimage.gif" class="d-block w-100" alt="error" style="width:900px;height:400px">
+                </div>
+        <?php
                 echo "<h4 class='text-danger text-center'>No Data Found<br> Please go back to previous page and upload content.</h4>";
             }
             ?>

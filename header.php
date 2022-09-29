@@ -7,6 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+    <link rel="icon" href="logo/jn.png" type="image/png">
     <link rel="stylesheet" href="path/to/pyscript.css" />
     <script defer src="path/to/pyscript.js"></script>
 
