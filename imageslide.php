@@ -1,6 +1,3 @@
-<!-- <div class="carousel-item active">
-    <img src="..." class="d-block w-100">
-</div> -->
 <?php
 include "db_config.php";
 $sql = "SELECT * FROM datafile ORDER BY id DESC";
@@ -11,24 +8,24 @@ if (mysqli_num_rows($res) > 0) {
 
 ?>
         <div class="carousel-item active justify" data-bs-interval="2000">
-            <img src="uploads/<?= $video['file_url'] ?>" class="d-block w-100" alt="error" style="width:900px;height:400px">
+            <img src="uploads/<?= $video['file_url'] ?>" class="d-block" alt="error" style="width:550px; height:400px">
         </div>
     <?php
     }
     while ($video = mysqli_fetch_assoc($res)) {
     ?>
         <div class="carousel-item" data-bs-interval="2000">
-            <img src="uploads/<?= $video['file_url'] ?>" class="d-block w-100" alt="error" style="width:900px;height:400px">
+            <img src="uploads/<?= $video['file_url'] ?>" class="d-block" alt="error" style="width:550px; height:400px">
         </div>
 
 
-<?php
+    <?php
     }
 } else {
     // echo "<h4 class='text-danger text-center'>No Data Found<br> Please go back to previous page and upload content.</h4>";
-?>
-     <div class="carousel-item active justify" data-bs-interval="2000">
-            <img src="logo/noimage.gif" class="d-block w-100" alt="error" style="width:900px;height:400px">
+    ?>
+    <div class="carousel-item active justify" data-bs-interval="2000">
+        <img src="logo/noimage.gif" class="d-block" alt="error" style="width:400px; height:400px">
     </div>
 <?php
 }

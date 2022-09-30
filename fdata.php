@@ -36,8 +36,8 @@
                     <img src="uploads/<?= $video['file_url'] ?>" class="img-fluid img-thumbnail">
                     <figcaption>
                         <blockquote class="text-center text-light"><?= $video['subject'] ?></blockquote>
-                        
-                            <hr>
+
+                        <hr>
                         </blockquote>
                     </figcaption>
                 </figure>
@@ -45,20 +45,23 @@
                 </video> -->
             </div>
 
-    <?php
+        <?php
         }
     } else {
         ?>
         <div class="carousel-item active justify" data-bs-interval="2000">
             <img src="logo/noimage.gif" class="d-block w-100" alt="error" style="width:900px;height:400px">
-    <?php
-        echo "<h4 class='text-danger text-center'><br>No Data Found</h4>";
-        ?>
+            <?php
+            echo "<h4 class='text-danger text-center'><br>No Data Found</h4>";
+            ?>
         </div>
         <br>
-        <?php
+    <?php
     }
-        ?>
+    ?>
     <br>
     <br>
 </div>
+
+
+
