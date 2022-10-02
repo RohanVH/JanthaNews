@@ -18,6 +18,7 @@
         margin: 0 auto;
         resize: both;
         word-wrap: break-word;
+        word-break: break-all;
 
     }
 
@@ -38,10 +39,12 @@
     ?>
 
             <div class="col-sm-4 d-flex justify-content-center text-center text-light">
-                <a href="<?= $video["categories"] . ".php#" . $video["subject"] ?>">
+
+                <a href="<?= 'getpage' . ".php#" . $video["subject"] ?>">
+
                     <script>
                         if (window.location.href.includes("<?php $video["subject"] ?>")) {
-                            $(document).scrollTop(450).style.backgroundColor = "red";;
+                            $(document).scrollTop(450);
                         }
                     </script>
                     <div id="img" class="card bg-light" style="width: 13rem;border:ridge;border-color:white;">
