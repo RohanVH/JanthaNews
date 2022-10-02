@@ -17,6 +17,7 @@
         /* Animation */
         margin: 0 auto;
         resize: both;
+        word-wrap: break-word;
 
     }
 
@@ -28,6 +29,7 @@
     <?php
     include "db_config.php";
     $sql = "SELECT * FROM datafile ORDER BY id DESC";
+    $subjectquery = "SELECT * FROM datafile where `subject`";
     $res = mysqli_query($connectdb, $sql);
 
     if (mysqli_num_rows($res) > 0) {
@@ -36,16 +38,18 @@
     ?>
 
             <div class="col-sm-4 d-flex justify-content-center text-center text-light">
-                <a href="<?= $video['categories'] ?>.php">
+                <a href="<?= $video["categories"] . ".php#" . $video["subject"] ?>">
+                    <script>
+                        if (window.location.href.includes("<?php $video["subject"] ?>")) {
+                            $(document).scrollTop(450).style.backgroundColor = "red";;
+                        }
+                    </script>
                     <div id="img" class="card bg-light" style="width: 13rem;border:ridge;border-color:white;">
-                        <img src="uploads/<?= $video['file_url'] ?>" class="card-img-top d-flex center" alt="..." style="width:203px;height:200px;border-radius:2%;">
-                        <!-- <div class="card-body" style="width:400px;height:200px;"> -->
-                        <!-- <p class="card-text"><?= $video['content'] ?></p> -->
-                        <!-- </div> -->
+                        <img src="uploads/<?= $video["file_url"] ?>" class="card-img-top d-flex center" style="width:203px;height:200px;border-radius:2%;" onerror=this.src="logo/noimage.gif">
                         <div class="container card-body text-center" style="width: 13rem;">
-                            <p class="card-title text-center text-danger" style="width:100%;height:1%;"><u class="h3 text-danger" id="title"><?= $video['subject'] ?></u></p>
+                            <p class="card-title text-center text-danger" style="width: 10rem;heiht:2rem;"><u class="h3 text-danger" id="title"><?= $video['subject'] ?></u></p>
                             <hr style="color:black;">
-                            <p class="h6 card-text text-muted d-flex justify-content-end">-<?= $video['categories'] ?></p>
+                            <p class="h6 card-text text-muted d-flex justify-content-end">-<?= $video["categories"] ?></p>
                         </div>
                     </div>
                 </a>
@@ -53,7 +57,7 @@
 
         <?php
         }
-        
+
         echo "</div>";
     } else {
         ?>

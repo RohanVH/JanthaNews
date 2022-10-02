@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include('header.php');?>
 <div class="container-fluid bg-dark">
         <br>
         <div class="col-lg">
@@ -85,39 +85,45 @@
 
         <!-- </div>
         </div> -->
-        <div class="container-fluid text-center text-light">
+        <div class="container-fluid text-center text-light" id="flashnews">
                 <div class="col-auto border border-3 text-center d-flex-justify-content-center" style="background-color:black;">
                         <span style="position:relative;" class="h1 text-danger text-center"><u class="blink_me">Flash News</u></span>
                         <p class="text-light text-center">
                                 <br>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">
+                                <div class="container col">
                                         <marquee behavior="scroll" direction="up" scrollamount="3" style="width:300px; height:300px">
                                                 <?php include('inshorts.php'); ?>
 
                                                 <br>
                                         </marquee>
+                                        <hr>
                                 </div>
-                                <div class="col">
+                                <div class="container col">
                                         <marquee behavior="scroll" direction="up" scrollamount="3" style="width:300px; height:300px">
                                                 <?php
                                                 include("hindi_inshorts_news.php");
                                                 ?>
+                                                <br>
                                         </marquee>
+                                        <hr>
                                 </div>
-                                <div class="col">
+                                <div class="container col">
                                         <marquee behavior="scroll" direction="up" scrollamount="3" style="width:300px; height:300px">
+                                                
                                                 <?php
                                                 include("kannadanews.php");
                                                 ?>
+                                                <br>
                                         </marquee>
+                                        <hr>
                                 </div>
                         </div>
                         </p>
                 </div>
                 <br>
                 <br>
-                <?php include("newscontainer.php");?>
+                <?php include("newscontainer.php"); ?>
                 <br>
                 <br>
         </div>

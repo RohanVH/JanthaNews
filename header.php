@@ -75,18 +75,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center py-2 px-lg-5 bg-light">
+            <div class="row align-items-center py-2 px-lg-5 bg-light justify-content-start">
                 <div class="col-lg-4">
-                    <a href="" class="navbar-brand d-none d-lg-block">
+                    <a href="homepage.php" class="navbar-brand d-none d-lg-block">
                         <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Jantha</span>News</h1>
                     </a>
                 </div>
-                <div class="col-md text-lg-center">
+                <div class="col-md text-lg-center d-flex justify-content-center">
                     <h1 class="blink_me">LIVE</h1>
                 </div>
 
 
-                <div class="col text-lg-right">
+                <div class="col text-lg-right d-flex justify-content-end">
                     <link rel="stylesheet" href="css/darkmode.css">
                     <img src="img/dark1.png" onclick="myFunction()" id="dark" />
                     <script src="js/darkmode.js"></script>
@@ -108,7 +108,12 @@
                 <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
                         <a href="homepage.php" class="nav-item nav-link text-light">Home</a>
-                        <a href="homepage.php" class="nav-item text-light nav-link active">News</a>
+                        <a href="homepage.php#flashnews" class="nav-item text-light nav-link active">News</a>
+                        <script>
+                            if (window.location.href.includes("<?php $video['subject'] ?>")) {
+                                $(document).scrollTop(450).style.backgroundColor = "red";;
+                            }
+                        </script>
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Categories</a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -117,15 +122,16 @@
                         </div> -->
                         <a href="contact.php" class="nav-item nav-link text-light">Contact</a>
                     </div>
-                    <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <div class="input-group ml-auto" style="width: 100%; max-width: 300px;display:none;">
                         <input type="text" class="form-control" placeholder="Keyword">
                         <div class="input-group-append">
                             <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
                         </div>
-
                     </div>
+
                 </div>
             </nav>
         </div>
         <br>
+        <?php include("autocreatepage.php"); ?>
         <!-- Navbar End -->
