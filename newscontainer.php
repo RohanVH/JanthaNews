@@ -25,6 +25,17 @@
     #img:hover {
         transform: scale(1.1);
     }
+
+    @media screen and (min-width: 8rem) {
+        #img {
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 12rem) {
+        #img {
+            font-size: 10px;
+        }
+    }
 </style>
 <div class="row row-cols-1 row-cols-md-5 g-4 border border-3 text-center d-flex-justify-content-center" style="background-color:black;padding: 60px;">
     <?php
@@ -50,7 +61,7 @@
                     <div id="img" class="card bg-light" style="width: 13rem;border:ridge;border-color:white;">
                         <img src="uploads/<?= $video["file_url"] ?>" class="card-img-top d-flex center" style="width:203px;height:200px;border-radius:2%;" onerror=this.src="logo/noimage.gif">
                         <div class="container card-body text-center" style="width: 13rem;">
-                            <p class="card-title text-center text-danger" style="width: 10rem;heiht:2rem;"><u class="h3 text-danger" id="title"><?= $video['subject'] ?></u></p>
+                            <p class="card-title text-center text-danger" style="width: 10rem;height:2rem;font-size:10px;"><u class="h3 text-danger" id="title"><?= $video['subject'] ?></u></p>
                             <hr style="color:black;">
                             <p class="h6 card-text text-muted d-flex justify-content-end">-<?= $video["categories"] ?></p>
                         </div>
