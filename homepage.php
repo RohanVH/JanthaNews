@@ -61,6 +61,7 @@
                                         <marquee behavior="scroll" direction="up" scrollamount="3" style="width:300px; height:300px">
                                                 
                                                 <?php
+                                                include_once('phpDOM/simple_html_dom.php');
                                                 include("kannadanews.php");
                                                 ?>
                                                 <br>

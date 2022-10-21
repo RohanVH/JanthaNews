@@ -3,21 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>JanthaNews</title>
+    <title>ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
     <link rel="icon" href="logo/jn.png" type="image/png">
-    <!-- <link rel="stylesheet" href="path/to/pyscript.css" />
-    <script defer src="path/to/pyscript.js"></script> -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Jantha News favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/icon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,7 +40,6 @@
                 <div class="col-9">
                     <div class="d-flex justify-content-between">
                         <div class="bg-primary text-white text-center py-1 p-1"><span class="h3 text-light align-items-center">News Headlines</span></div>
-                        <!-- <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;"> -->
                         <div class="col d-flex justify-content-end">
 
                             <marquee behavior="" direction="" scrollamount="1" loop="infinite">
@@ -76,9 +73,12 @@
                 </div>
             </div>
             <div class="row align-items-center py-2 px-lg-5 bg-light justify-content-start">
+                
+            </div>
+            <div class="row align-items-center py-2 px-lg-5 bg-light justify-content-start">
                 <div class="col-lg-4">
                     <a href="homepage.php" class="navbar-brand d-none d-lg-block">
-                        <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Jantha</span>News</h1>
+                        <h1 class="m-0 display-5 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:35%;height:35%;"></h1>
                     </a>
                 </div>
                 <div class="col-md text-lg-center d-flex justify-content-center">
@@ -100,7 +100,8 @@
         <div class="container-fluid p-0 mb-3 ">
             <nav class="navbar navbar-expand-lg bg-dark navbar-light py-2 py-lg-0 px-lg-5">
                 <a href="homepage.php" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Jantha</span>News</h1>
+                    <h1 class="m-0 display-5 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:20%;height:20%;"><br></h1>
+                
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
