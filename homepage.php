@@ -1,10 +1,9 @@
-<!-- /**
- * Author:    Name
- * Created:   27.09.2022
- * 
- * (c) Copyright by Dword Core.
- **/ -->
-<?php include('header.php');?>
+<?php include('header.php');
+//  * Author:    Name
+//  * Created:   27.09.2022
+//  * 
+//  * (c) Copyright by Dword Core.
+?>
 <div class="container-fluid bg-dark">
         <br>
         <div class="col-lg">

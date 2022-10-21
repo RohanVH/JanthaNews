@@ -121,12 +121,7 @@
                                 $(document).scrollTop(450).style.backgroundColor = "red";;
                             }
                         </script>
-                        <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Categories</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <?php include('fetch_categories.php'); ?>
-                            </div>  
-                        </div> -->
+                        
                         <a href="contact.php" class="nav-item nav-link text-light">Contact</a>
                     </div>
                     <div class="input-group ml-auto" style="width: 100%; max-width: 300px;display:none;">
