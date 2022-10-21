@@ -1,3 +1,9 @@
+<!-- /**
+ * Author:    Rohan
+ * Created:   27.09.2022
+ * 
+ * (c) Copyright by Dword Core.
+ **/ -->
 <div class="container justify-content-center">
     <h1 class="text-center"> <u>Add/Delete Categories</u></h1><br>
 

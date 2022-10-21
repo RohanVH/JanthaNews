@@ -1,3 +1,9 @@
+<!-- /**
+ * Author:    Rohan
+ * Created:   27.09.2022
+ * 
+ * (c) Copyright by Dword Core.
+ **/ -->
 <?php include('header.php');?>
 <center class='h1'><u class='text-danger'>GYM</u></center>
 <br><br><br><p class="h1 text-center text-dark"><q class="bg-warning"><span class="blink_me">

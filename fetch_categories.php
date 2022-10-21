@@ -1,3 +1,9 @@
+<!-- /**
+ * Author:    Rohan
+ * Created:   27.09.2022
+ * 
+ * (c) Copyright by Dword Core.
+ **/ -->
 <?php
     include("db_config.php");
     $fetch_query="SELECT * from category";

@@ -1,3 +1,9 @@
+<!-- /**
+ * Author:    Name
+ * Created:   27.09.2022
+ * 
+ * (c) Copyright by Dword Core.
+ **/ -->
 <?php include('header.php');?>
 <div class="container-fluid bg-dark">
         <br>

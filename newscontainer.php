@@ -1,3 +1,9 @@
+<!-- /**
+ * Author:    Rohan
+ * Created:   27.09.2022
+ * 
+ * (c) Copyright by Dword Core.
+ **/ -->
 <style>
     @media screen and (min-width: 12rem) {
         #title {

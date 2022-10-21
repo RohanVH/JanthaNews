@@ -1,4 +1,10 @@
-<?php
+<!-- /**
+ * Author:    Name
+ * Created:   27.09.2022
+ * 
+ * (c) Copyright by Dword Core.
+ **/ -->
+ <?php
     include("db_config.php");
     $add=$_POST['addcat'];
     if(isset($_POST['add'])){

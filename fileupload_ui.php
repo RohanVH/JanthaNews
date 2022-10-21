@@ -1,3 +1,9 @@
+<!-- /**
+ * Author:    Rohan
+ * Created:   27.09.2022
+ * 
+ * (c) Copyright by Dword Core.
+ **/ -->
 <link rel="canonical" href="https://css-tricks.com/examples/DragAndDropFileUploading/">
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="stylesheet" href="main.css" />
