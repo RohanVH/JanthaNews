@@ -32,8 +32,8 @@
     $sql = "SELECT * FROM datafile ORDER BY id DESC";
     $res = mysqli_query($connectdb, $sql);
 
-    if (mysqli_num_rows($res) > 0) {
-        while ($video = mysqli_fetch_assoc($res)) {
+    if(mysqli_num_rows($res) > 0) {
+        while ($video = mysqli_fetch_assoc($res)>0) {
 
     ?>
             <div class="column">

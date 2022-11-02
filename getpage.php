@@ -89,7 +89,7 @@ if ($row > 0) {
                 
             </center>
 
-            <div id="<?= $video["subject"] ?>" class="content">
+            <div id="<?= $video["file_url"] ?>" class="content">
                 <div id="header"><?= $video["subject"] ?></div>
                 <p class=""><?= $video["content"] ?></p>
                 <p class="card-text"><small class="text-muted d-flex justify-content-end">-<?= $video["categories"] ?></small></p>
