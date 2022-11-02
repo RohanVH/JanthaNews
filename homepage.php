@@ -35,10 +35,10 @@
 
 </div>
 <hr>
-<div class="container-fluid bg-dark ">
+<div class="container-fluid bg-dark">
         <br>
-        <!-- <div class="container-fluid text-center text-light" id="flashnews">
-                <div class="col-auto border border-3 text-center d-flex-justify-content-center" style="background-color:black;">
+        <div class="container-fluid text-center text-light" id="flashnews">
+              <!--   <div class="col-auto border border-3 text-center d-flex-justify-content-center" style="background-color:black;">
                         <span style="position:relative;" class="h1 text-danger text-center"><u class="blink_me">Flash News</u></span>
                         <p class="text-light text-center">
                                 <br>
@@ -76,11 +76,29 @@
                         </div>
                         </p>
                 </div> -->
-                <div>
+                <style>
+                        .zoom {
+                        transition: transform .1s; /* Animation */
                         
-                </div>
-                <br>
-                <br>
+                        margin: 0 auto;
+                        }
+
+                        .zoom:hover {
+                        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                        }
+                </style>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/aGxqoz_WvxE?list=PLCneSXnzz-PciiT1kIjGvJxT5qsFkmnLY" title="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ/Janatha News Kannada ಪತ್ರಿಕೆ ಹಾಗೂ ಚಾನಲ್ ಗೆ ಪ್ರೀತಿಯಿಂದ ಹರಸಿದ ಜೈ ಜಗದೀಶ್ ಸರ್.." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/kJL8Fz1qQo0" title="ಸಾಯಲೂ ಸಿದ್ಧವಾದ ಕೆ.ಆರ್.ಎಸ್ ಪಾರ್ಟಿ..!|KRS PAERTY|KRS|RAVIKRISHNA REDDY|#janathanewskannada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/nry10boceF0?list=PLCneSXnzz-PciiT1kIjGvJxT5qsFkmnLY" title="ಅಭಿಷೇಕ್ ಅಂಬರೀಶ್ ಬಾಡಿಗಾರ್ಡ್ ಟೀಶರ್ಟ್ ಮೇಲೆ ಕ್ರಾಂತಿ..!|ABHISHEK AMBARISH|AMBARISH|FILMY|" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/J1t_RYx5FP4?list=PLCneSXnzz-PciiT1kIjGvJxT5qsFkmnLY" title="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ ಪತ್ರಿಕೆ ಹಾಗೂ ಚಾನಲ್ ಗೆ ಪ್ರೀತಿಯಿಂದ ಹರಸಿದ ಟಿ.ಪಿ ಸಿದ್ಧರಾಜು ಸರ್ ಗೆ ಧನ್ಯವಾದಗಳು .." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        <br>
+                        <br>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/sRd5rEu8l0s?list=PLCneSXnzz-PeUzGhe6tGoGLTatuGxAz1K" title="ಮದ್ವೆ ಆಗಿದ್ಯಾ..?ಹೆಂಡತಿ ಮಕ್ಕಳು ಇದರಾ..!|ರೌಡಿಗಳಿಗೆ ಮಂಡ್ಯ ಎಸ್.ಪಿ ವಾರ್ನಿಂಗ್|MANDYA S P ROWDY PARADE|" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/ML3lL0FcBts?list=PLCneSXnzz-Pdju-Edjp_zZMLRtXuKJTgA" title="ಇತಿಹಾಸ ತಿರುಗಿಸಿದ ಪಠ್ಯಪುಸ್ತಕ..!|ಸಿದ್ಧರಾಮಯ್ಯ|CHAKRA THEERTHA|#chakratirth #siddaramaiah #textbook" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/51gdRokyhVc?list=PLCneSXnzz-Pdju-Edjp_zZMLRtXuKJTgA" title="ನಿರುದ್ಯೋಗಕ್ಕೆ ಕಾರಣ ತಿಳಿಸಿದ ರಾಹುಲ್ ಗಾಂಧಿ..!|RAHUL GANDHI|CONGRESS|CHITHRADURGA|UDYOGA SRISHTI|" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/qwTWLVTJ3rc?list=PLCneSXnzz-Pdju-Edjp_zZMLRtXuKJTgA" title="ಡಾ.ಬಾಬಾ ಸಾಹೇಬ ಅಂಬೇಡ್ಕರ್ ಸೋಲಲು ಕಾರಣ ಯಾರು ಗೊತ್ತೇ..?|BSY|BJP|CONGRESS|SPEECH|BSYADAYURAPPA|MODI|BOMMAI|" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                        <br>
                 <?php 
                 include("newscontainer.php"); 
                 ?>

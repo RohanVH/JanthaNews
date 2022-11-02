@@ -11,14 +11,14 @@
     <div class="row">
         <div class="col-lg-3 col-md-6 mb-5">
             <a href="index.html" class="navbar-brand">
-                <img src="logo/N.gif" alt="JanthaNews Intro" style="background-repeat:no-repeat;width:100%">
+                <img src="img/njkannada.jpg" alt="JanthaNews Intro" style="background-repeat:no-repeat;width:100%">
             </a>
             <div class="d-flex justify-content-start mt-4">
                 <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.youtube.com/c/JanathaNewsKannada"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
