@@ -45,9 +45,8 @@
             <div class="row align-items-center bg-light bg-dark">
                 <div class="col-9">
                     <div class="d-flex justify-content-between">
-                        <div class="bg-primary text-white text-center py-1 p-1"><span class="h3 text-light align-items-center">News Headlines</span></div>
+                        <div class="bg-primary text-white text-center py-1 p-1" ><span class="h3 text-light align-items-center">News Headlines</span></div>
                         <div class="col d-flex justify-content-end">
-
                             <marquee behavior="" direction="" scrollamount="1" loop="infinite">
                                 <p class="text-light text-center my-1 d-flex justify-content-end">
 
@@ -78,13 +77,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center py-2 px-lg-5 bg-light justify-content-start">
-                
-            </div>
-            <div class="row align-items-center py-2 px-lg-5 bg-light justify-content-start">
+           
+            <div class="row align-items-center bg-light justify-content-start">
                 <div class="col-lg-4">
                     <a href="homepage.php" class="navbar-brand d-none d-lg-block">
-                        <h1 class="m-0 display-5 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:35%;height:35%;"></h1>
+                        <h1 class="m-0 display-3 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:15%;height:15%;"></h1>
                     </a>
                 </div>
                 <div class="col-md text-lg-center d-flex justify-content-center">
@@ -104,7 +101,7 @@
 
         <!-- Navbar Start -->
         <div class="container-fluid p-0 mb-3 ">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-light py-2 py-lg-0 px-lg-5">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-light     py-lg-0 px-lg-5">
                 <a href="homepage.php" class="navbar-brand d-block d-lg-none">
                     <h1 class="m-0 display-5 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:20%;height:20%;"><br></h1>
                 
@@ -118,13 +115,13 @@
                         <a href="homepage.php#flashnews" class="nav-item text-light nav-link active">News</a>
                         <script>
                             if (window.location.href.includes("<?php $video['subject'] ?>")) {
-                                $(document).scrollTop(450).style.backgroundColor = "red";;
+                                $(document).scrollTop(450).style.backgroundColor ="yellow";;
                             }
                         </script>
                         
-                        <a href="contact.php" class="nav-item nav-link text-light">Contact</a>
+                        <!-- <a href="contact.php" class="nav-item nav-link text-light">Contact</a> -->
                     </div>
-                    <div class="input-group ml-auto" style="width: 100%; max-width: 300px;display:none;">
+                    <div class="input-group mx-auto" style="width: 100%; max-width: 300px;display:none;">
                         <input type="text" class="form-control" placeholder="Keyword">
                         <div class="input-group-append">
                             <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
@@ -134,6 +131,5 @@
                 </div>
             </nav>
         </div>
-        <br>
         <?php include("autocreatepage.php"); ?>
         <!-- Navbar End -->
