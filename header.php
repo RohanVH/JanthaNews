@@ -47,17 +47,19 @@
                     <div class="d-flex justify-content-between">
                         <div class="bg-primary text-white text-center py-1 p-1" ><span class="h3 text-light align-items-center">News Headlines</span></div>
                         <div class="col d-flex justify-content-end">
-                            <marquee behavior="" direction="" scrollamount="1" loop="infinite">
+                            <marquee behavior="" direction="" scrollamount="5" loop="infinite">
                                 <p class="text-light text-center my-1 d-flex justify-content-end">
 
                                     <?php
-                                    include('scraping.php');
-                                    if (true) {
-
-                                        foreach ($html->find('div.detail') as $ele) {
-                                            echo $ele->plaintext . ' ';
+                                    include_once('db_config.php');
+                                    $sql="SELECT * from breakingnews";
+                                    $result=mysqli_query($connectdb,$sql);
+                                    $row = mysqli_num_rows($result);
+                                    if ($row > 0) {
+                                        while ($content = mysqli_fetch_assoc($result)) {  
+                                            echo $content['content'];
                                         }
-                                    }
+                                    }                                 
                                     ?>
                                 </p>
                             </marquee>
@@ -84,9 +86,7 @@
                         <h1 class="m-0 display-3 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:15%;height:15%;"></h1>
                     </a>
                 </div>
-                <div class="col-md text-lg-center d-flex justify-content-center">
-                    <h1 class="blink_me">LIVE</h1>
-                </div>
+                
 
 
                 <div class="col text-lg-right d-flex justify-content-end">

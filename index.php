@@ -18,7 +18,7 @@
 <body class="container d-flex justify-content-center" style="background-color: black;">
 
     <div class="container d-flex justify-content-center">
-        <img src="logo/N.gif" alt="JanthaNews Intro" style="background-repeat:no-repeat;width:50%">
+        <img src="img/N.gif" alt="JanthaNews Intro" style="background-repeat:no-repeat;width:50%">
     </div>
     <script>
         setTimeout(myURL, 2000);

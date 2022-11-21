@@ -6,6 +6,8 @@
  **/ -->
 <?php include('header.php'); ?>
 <br>
+<?php include('breakingNews.php'); ?>
+<br>
 <?php include('add_Categories.php'); ?>
 <br>
 <?php include('fileupload_ui.php'); ?>

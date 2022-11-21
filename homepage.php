@@ -6,7 +6,7 @@
 ?>
 <div class="container-fluid bg-dark">
         <div class="col-lg">
-                <div class="col d-flex justify-content-start">
+                <div class="">
                         <div class="collapse" id="navbarToggleExternalContent">
                                 <div class="bg-dark p-2">
                                         <h5 class="text-light h4 text-center">Categories</h5><br>
@@ -16,6 +16,7 @@
                                                 ?>
                                         </ul>
                                 </div>
+                                
                         </div>
                         <nav class="navbar navbar-dark bg-dark">
                                 <div class="container-fluid">
@@ -24,11 +25,12 @@
                                         </button>
                                         <br>
                                 </div>
+                                
                         </nav>
-                        <nav class="col d-flex justify-content-end p-2">
-                                <br>
-                                <a href="adminLogin.php"><button class="btn btn-danger text-light">Admin</button></a>
-                        </nav>
+                        <div class="col-md text-lg-center d-flex justify-content-center container rounded-pill" style="background-color:white;">
+                                <h1 class="blink_me">LIVE</h1>
+                        </div>
+                        <br>
                 </div>
         </div>
 </div>
@@ -78,13 +80,13 @@
                 </div> -->
                 <style>
                         .zoom {
-                        transition: transform .1s; /* Animation */
+                        transition: transform 0.3s ease-out; /* Animation */
                         
                         margin: 0 auto;
                         }
 
                         .zoom:hover {
-                        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
                         }
                 </style>
                 <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/aGxqoz_WvxE?list=PLCneSXnzz-PciiT1kIjGvJxT5qsFkmnLY" title="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ/Janatha News Kannada ಪತ್ರಿಕೆ ಹಾಗೂ ಚಾನಲ್ ಗೆ ಪ್ರೀತಿಯಿಂದ ಹರಸಿದ ಜೈ ಜಗದೀಶ್ ಸರ್.." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
