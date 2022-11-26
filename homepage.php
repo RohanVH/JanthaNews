@@ -27,9 +27,21 @@
                                 </div>
                                 
                         </nav>
+                        <div class="col text-end d-flex justify-content-end ">
+                    <div class="d-flex justify-content-end">
+                        <h5 style="cursor:pointer;color:black;font-size: 15px;">
+                            <span id="date" style="color:white;"></span>
+                            &nbsp;
+
+                            <span id="time" style="color:white;"></span>
+                        </h5>
+                        <script src="js/datatime.js"></script>
+                    </div>
+                </div>
                         <div class="col-md text-lg-center d-flex justify-content-center container rounded-pill" style="background-color:white;">
                                 <h1 class="blink_me">LIVE</h1>
                         </div>
+                        <br>
                         <br>
                 </div>
         </div>
@@ -78,7 +90,7 @@
                         </div>
                         </p>
                 </div> -->
-                <style>
+                <!-- <style>
                         .zoom {
                         transition: transform 0.3s ease-out; /* Animation */
                         
@@ -99,7 +111,11 @@
                 <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/ML3lL0FcBts?list=PLCneSXnzz-Pdju-Edjp_zZMLRtXuKJTgA" title="ಇತಿಹಾಸ ತಿರುಗಿಸಿದ ಪಠ್ಯಪುಸ್ತಕ..!|ಸಿದ್ಧರಾಮಯ್ಯ|CHAKRA THEERTHA|#chakratirth #siddaramaiah #textbook" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/51gdRokyhVc?list=PLCneSXnzz-Pdju-Edjp_zZMLRtXuKJTgA" title="ನಿರುದ್ಯೋಗಕ್ಕೆ ಕಾರಣ ತಿಳಿಸಿದ ರಾಹುಲ್ ಗಾಂಧಿ..!|RAHUL GANDHI|CONGRESS|CHITHRADURGA|UDYOGA SRISHTI|" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe class="zoom" width="300" height="200" src="https://www.youtube.com/embed/qwTWLVTJ3rc?list=PLCneSXnzz-Pdju-Edjp_zZMLRtXuKJTgA" title="ಡಾ.ಬಾಬಾ ಸಾಹೇಬ ಅಂಬೇಡ್ಕರ್ ಸೋಲಲು ಕಾರಣ ಯಾರು ಗೊತ್ತೇ..?|BSY|BJP|CONGRESS|SPEECH|BSYADAYURAPPA|MODI|BOMMAI|" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <br>
+                                <br> -->
+                                <?php
+                                include_once("display_vdo.php");
+                                ?>
+                                        <br>
                                         <br>
                 <?php 
                 include("newscontainer.php"); 

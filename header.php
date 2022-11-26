@@ -11,8 +11,8 @@
     <meta charset="utf-8">
     <title>ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" name="keywords">
+    <meta content="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" name="description">
     <link rel="icon" href="logo/jn.png" type="image/png">
     
 
@@ -67,23 +67,13 @@
                         <!-- </div> -->
                     </div>
                 </div>
-                <div class="col text-end d-flex justify-content-end">
-                    <div class="d-flex justify-content-end">
-                        <h5 style="cursor:pointer;color:white;">
-                            <span id="date"></span>
-                            &nbsp;
-
-                            <span id="time"></span>
-                        </h5>
-                        <script src="js/datatime.js"></script>
-                    </div>
-                </div>
+                
             </div>
            
             <div class="row align-items-center bg-light justify-content-start">
                 <div class="col-lg-4">
                     <a href="homepage.php" class="navbar-brand d-none d-lg-block">
-                        <h1 class="m-0 display-3 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:15%;height:15%;"></h1>
+                        <h1 class="m-0 display-3 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:30%;height:30%;"></h1>
                     </a>
                 </div>
                 
@@ -101,11 +91,12 @@
 
         <!-- Navbar Start -->
         <div class="container-fluid p-0 mb-3 ">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-light     py-lg-0 px-lg-5">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-light py-lg-0 px-lg-5">
                 <a href="homepage.php" class="navbar-brand d-block d-lg-none">
                     <h1 class="m-0 display-5 text-uppercase"><img src="img/njkannada.jpg" alt="ಜನತಾ ನ್ಯೂಸ್ ಕನ್ನಡ" class="rounded-circle" style="width:20%;height:20%;"><br></h1>
                 
                 </a>
+                
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -121,6 +112,7 @@
                         
                         <!-- <a href="contact.php" class="nav-item nav-link text-light">Contact</a> -->
                     </div>
+                    
                     <div class="input-group mx-auto" style="width: 100%; max-width: 300px;display:none;">
                         <input type="text" class="form-control" placeholder="Keyword">
                         <div class="input-group-append">

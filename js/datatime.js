@@ -13,7 +13,7 @@ timeclr.addEventListener('mouseover', function handleMouseOver() {
 
 // 👇️ Change text color back on mouseout
 dateclr.addEventListener('mouseout', function handleMouseOut() {
-    dateclr.style.color = 'white';s
+    dateclr.style.color = 'white';
     dateclr.style.background = 'none';
 });
 

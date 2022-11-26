@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
-<body class="container d-flex justify-content-center" style="background-color: black;">
+<body class="container d-flex justify-content-center" style="background-color: white;">
 
     <div class="container d-flex justify-content-center">
         <img src="img/N.gif" alt="JanthaNews Intro" style="background-repeat:no-repeat;width:50%">
