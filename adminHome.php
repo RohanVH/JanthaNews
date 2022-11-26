@@ -8,6 +8,9 @@
 <br>
 <?php include('breakingNews.php'); ?>
 <br>
+<?php include('upload_youtube_link.php'); ?>
+<br>
+
 <?php include('add_Categories.php'); ?>
 <br>
 <?php include('fileupload_ui.php'); ?>

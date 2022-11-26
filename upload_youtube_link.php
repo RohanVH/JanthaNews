@@ -1,4 +1,4 @@
-<?php include("header.php");
+<?php 
 ?>
 <div style="background-color:black;" class="container text-center">
     <form action="upload_link.php" method="post">
